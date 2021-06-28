@@ -3,9 +3,9 @@ import React from 'react';
 const Button = ({title,actionsClick,backgroundColorButton}) => {
     return (
         <React.Fragment>
-            <button style={{backgroundColor:backgroundColorButton}}
-                onClick={actionsClick}>
-                {title}</button>
+            <button style={{backgroundColor:backgroundColorButton}} onClick={actionsClick}>
+                {title}
+            </button>
         </React.Fragment>
     );
 };

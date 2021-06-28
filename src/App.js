@@ -1,6 +1,5 @@
 import './App.css';
-import logoTwiter from "./twiter.svg";
-import logoComillas from "./mark.svg";
+import logoTwitter from "./images/twiter.svg";
 import Button from './components/Button';
 import Logo from './components/Logo';
 import Text from './components/Text';
@@ -27,13 +26,12 @@ function App() {
     <div className="App">
       <header className="App-header" style={{backgroundColor:color}}>
         <div className="card">
-        <Logo logo={logoComillas}/>
           <div className="card-quote">
             <Text propertyClassName="quote" texto={quote} colorFont={color}/>
           </div>
           <strong><Text propertyClassName="author" texto={author} colorFont={color}/></strong>
           <div className="card-button">
-            <Share quote={quote} author={author} title={<Logo logo={logoTwiter}/>}/>
+            <Share quote={quote} author={author} title={<Logo logo={logoTwitter}/>}/>
             <Button title={title} actionsClick={change} backgroundColorButton={color}/>
           </div>
         </div>
