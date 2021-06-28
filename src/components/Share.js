@@ -1,9 +1,8 @@
 import React from 'react';
-let url = "https://twitter.com/intent/tweet?text=";
-const Share = ({quote,author,title}) => {
+const Share = ({url,quote,author,title}) => {
     return (
         <React.Fragment>
-            <a href={url+quote+" - "+author}>{title}</a>
+            <a href={url+quote+" - "+author} target="_blank" rel="noreferrer" >{title}</a>
         </React.Fragment>
     );
 };
